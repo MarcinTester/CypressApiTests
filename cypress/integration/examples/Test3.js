@@ -18,12 +18,14 @@ describe('apiTest', function () {
             let body = JSON.parse(JSON.stringify(response.body))
             expect(response.statusCode).to.eq(200)
             cy.log(body)
-          //  console.log(body)
+
+            
             console.log(body[0])
             console.log(body[0].body)
             console.log(body[0].id)
             console.log(body[0].title)
             console.log(body[0].userId)
+
             })
         })
     })
